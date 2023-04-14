@@ -11,8 +11,6 @@ img {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 3em;
-  padding-bottom: 3em;
 }
 
 h1 {
@@ -23,6 +21,14 @@ h2 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
 header {
   background-color: #000000;
 }
@@ -30,16 +36,19 @@ header {
 .top-bar {
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 nav li {
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .sign-background {
@@ -55,47 +64,53 @@ nav li a {
 
 header p {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .about-me {
   font-family: inter, sans-serif;
   display: flex;
-  padding-bottom: 0;
 }
 
 .about-text {
-  width: 50%;
-  padding-bottom: 0;
+  width: 60%;
 }
 
 .what-can-I-do {
  background-color: #FAFAFA;
  font-family: inter, sans-serif;
+ padding-top: 6em;
+padding-bottom: 6em;
+}
+
+.what-can-I-do h3 {
+  margin: 0 auto;
 }
 
 .services {
   display: flex;
+  flex-direction: space-between;
 }
 
 .box {
   background-color: #ffffff;
-  border: 2px solid #d3d3d3;
-  margin: 5%;
-  padding: 30px;
+  border: 2px solid #e5e5e5;
+  margin: 30px;
+  padding: 60px;
 }
 
-.logo-creation {
-  width: 30%;
+/* .logo-creation {
+  width: 20%;
 }
 
 .web-design {
-  width: 30%;
+  width: 20%;
 }
 
 .branding {
-  width: 30%;
-}
+  width: 20%;
+} */
 
 .grid {
   display: grid;
@@ -119,18 +134,33 @@ header p {
   grid-column: 5 / 7;
 }
 
+.my-work {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
 .work-box {
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
+.work-box h2 {
+  margin-bottom: 0;
+}
+
+.work-box p {
+  padding-bottom: 3em;
+}
+
 .testimonials {
-  background-color: #000000;
+  background-color: #0E1215;
   color: #ffffff;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .testimonials h2 {
@@ -149,18 +179,42 @@ cite {
 
 .contact {
   text-align: center;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact p {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .social-links img {
   width: 30px;
+  padding: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 footer {
   background-color: #000000;
   color: #ffffff;
+  height: 10vh;
 }
 
 .copyright {
   text-align: center;
   font-size: 1.5rem;
+  justify-content: center;  
+}
+
+.copyright p {
+  margin: 0;
+  padding-top: 25px;
 }
