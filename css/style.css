@@ -27,6 +27,28 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a:link {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #CBC3E3;
+}
+
+a:hover {
+ color: red;
+}
+
+a:focus {
+ color: red;
+}
+
+a:active {
+ color: orange;
 }
 
 header {
@@ -78,39 +100,61 @@ header p {
 }
 
 .what-can-I-do {
- background-color: #FAFAFA;
- font-family: inter, sans-serif;
- padding-top: 6em;
-padding-bottom: 6em;
+  background-color: #FAFAFA;
+  font-family: inter, sans-serif;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .what-can-I-do h3 {
-  margin: 0 auto;
+  text-align: center;
 }
 
-.services {
+ .services {
   display: flex;
-  flex-direction: space-between;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+.service-button {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  width: 120px;
+}
+
+.service-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
 }
 
 .box {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   margin: 30px;
-  padding: 60px;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* .logo-creation {
-  width: 20%;
+.logo-creation {
+  width: 30%;
 }
 
 .web-design {
-  width: 20%;
+  width: 30%;
 }
 
 .branding {
-  width: 20%;
-} */
+  width: 30%;
+}  
 
 .grid {
   display: grid;
@@ -149,6 +193,7 @@ padding-bottom: 6em;
 }
 
 .work-box h2 {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -205,16 +250,16 @@ cite {
 footer {
   background-color: #000000;
   color: #ffffff;
-  height: 10vh;
+  height: 5vh;
 }
 
 .copyright {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   justify-content: center;  
 }
 
 .copyright p {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 15px;
 }
